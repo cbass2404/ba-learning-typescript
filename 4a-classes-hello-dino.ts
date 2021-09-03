@@ -4,7 +4,7 @@ class DinoKeeper {
     this.name = name;
   }
 
-  sayHi = () => {
+  public sayHi = () => {
     return this.name + ' says "hi"';
   };
 }
