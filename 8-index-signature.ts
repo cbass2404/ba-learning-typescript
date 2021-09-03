@@ -1,12 +1,13 @@
 type Dinosaur = {
-	id: number
-	species: string
-	age: number
-	location?: {
-		longitude: number
-		latitude: number
-	}
-}
+  id: number;
+  species: string;
+  age: number;
+  trainer?: string;
+  location?: {
+    longitude: number;
+    latitude: number;
+  };
+};
 
-const dinoCache: { [index:string] : number } = {}
-export { dinoCache, Dinosaur }
+const dinoCache: { [index: string]: Dinosaur } = {};
+export { dinoCache, Dinosaur };
